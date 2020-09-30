@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "Titulo";
+  src: url('fonts/titulos-posts.ttf');
+}
+@font-face {
+  font-family: "Creditos/Hrs";
+  src: url('fonts/creditoshrs.ttf');
+}
+@font-face {
+  font-family: "Contenido";
+  src: url('fonts/textos-posts.ttf');
+}
+
+body {
+  --fondo-gris: #f1f1f1;
+  --titulos: #131313;
+  --meta: #666666;
+  --borde: #4D4D4D36;
+  --rojo: #CC0000;
+  --breaking: #FFE200;
+}
+
+/* Tamaño de tipografia */
+h1 {
+  font-size: 48px;
+  line-height: 52px;
+  font-family: 'Titulo', sans-serif;
+}
+h2 {
+  font-size: 30px;
+  line-height: 34px;
+  font-family: 'Titulo', sans-serif;
+}
+
+/* Color de tipografia */
+h1 a,
+h2 a {
+  color: var(--titulos) !important;
+}
+h1 a:hover,
+h2 a:hover {
+  text-decoration: none;
+}
+#author, 
+#date {
+  color: var(--meta);
+  font-size: 13px;
+  line-height: 17px;
+  font-family: 'Creditos/Hrs', sans-serif;
+}
+p {
+  font-family: 'Contenido', sans-serif;
+}
+#sera {
+  margin: 15px 0;
+}
+
+/* Estructura principal */
+img {
+  width: 100%;
+}
+.shadow {
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.7);
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+.gray {
+  background: var(--fondo-gris);
+}
+.bordered {
+  border-radius: 15px;
+}
+.radius-top {
+  border-radius: 15px 15px 0 0;
+}
+.radius-bottom {
+  border-radius: 0 0 15px 15px;
+}
+.p15 {
+  padding: 15px;
+}
+.p10 {
+  padding: 10px;
+}
+.p25 {
+  padding: 25px;
+}
+#metadata {
+  display: flex;
+  text-transform: uppercase;
+}
+
+#destacada {
+  background: #fff;
+  margin: 15px 0;
+}
+#principales {
+  padding: 15px 0;
+  border-bottom: 1px solid var(--borde);
+}
+/* Principal */
+#principal {
+  margin-bottom: 30px;
+}
+#principal h1 {
+  padding: 15px 15px 0 15px;
+}
+#principal .metadata {
+  padding: 0 15px 15px 15px;
+}
+
+#banner {
+  background: var(--rojo);
+  color: #fff;
+  border: 4px solid #fff;
+}
+
+@media screen and (max-width: 768px) {
+}
+
+/* Cobertura */
+.cobertura {
+  background: url('../assets/blog/covid.jpg');
+  background-size: cover;
+  padding: 50px 0;
+}
+
+.breaking {
+  background: var(--breaking);
+  margin: 40px 0;
+  padding: 15px 0 0 0;
+}
+
+#posts-tendencia {
+  background: var(--fondo-gris);
+}
